@@ -4,7 +4,7 @@ namespace :opensteam do
 
       desc "install the shipment plugin for opensteam (copy migration files..)"
       task :install do
-        system "rsync -ruv vendor/plugins/opensteam_shipment/db/migrate db"
+        system "rsync -ruvp vendor/plugins/opensteam_shipment/db/migrate db"
       end
     end
   end
